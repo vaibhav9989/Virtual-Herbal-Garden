@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome To Herbal Garden</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Add FontAwesome for bookmark icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <h1>Virtual Herbal Garden</h1>
+
+  <!-- Search and Filter Section -->
+  <div class="search-filter-container">
+    <input type="text" id="search-input" placeholder="Search for plants..." />
+    <select id="filter-region">
+      <option value="">All Regions</option>
+      <option value="Asia">Asia</option>
+      <option value="Europe">Europe</option>
+      <option value="Africa">Africa</option>
+      <option value="Americas">Americas</option>
+    </select>
+    <button id="bookmark-button">View Bookmarks</button>
+    <button id="home-button">Home</button>
+  </div>
+
+  <!-- Plants Container -->
+  <div id="plants-container"></div>
+
+  <!-- Popup for plant details -->
+  <div id="plant-popup" class="popup">
+    <div class="popup-content">
+      <span id="close-popup">&times;</span>
+      <h2 id="popup-name"></h2>
+      <p id="popup-description"></p>
+      <p><strong>Region:</strong> <span id="popup-region"></span></p>
+      <p><strong>Common Names:</strong> <span id="popup-commonNames"></span></p>
+      <div id="popup-images"></div>
+      <iframe id="popup-video" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <button id="add-to-bookmark">Bookmark</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
