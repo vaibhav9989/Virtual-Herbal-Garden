@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Herbal Garden</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="welcome-page">
+        <h1 class="welcome-title">Virtual Herbal Garden</h1>
+        <p class="welcome-message">Welcome to our virtual exploration of the wonders of herbs!</p>
+        <button id="enter-site-button">Explore the Garden</button>
+    </div>
+
+    <div id="main-content">
+        <h1>Virtual Herbal Garden</h1>
+
+        <div class="search-filter-container">
+            <input type="text" id="search-input" placeholder="Search for plants..." />
+            <select id="filter-region">
+                <option value="">All Regions</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="India">India</option> <option value="Indonesia">Indonesia</option> <option value="Southeast Asia">Southeast Asia</option> <option value="Mediterranean">Mediterranean</option> </select>
+            <button id="bookmark-button">View Bookmarks</button>
+            <button id="home-button">Home</button>
+        </div>
+
+        <div id="plants-container"></div>
+    </div>
+
+    <div id="plant-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <h2 id="popup-name"></h2>
+            <p><strong>Botanical Name:</strong> <span id="popup-botanicalName"></span></p>
+            <p><strong>Description:</strong> <span id="popup-description"></span></p>
+            <p><strong>Habitat:</strong> <span id="popup-habitat"></span></p>
+            <p><strong>Medicinal Uses:</strong> <span id="popup-medicinalUses"></span></p>
+            <p><strong>Methods of Cultivation:</strong> <span id="popup-cultivationMethods"></span></p>
+            <p><strong>Region:</strong> <span id="popup-region"></span></p>
+            <p><strong>Common Names:</strong> <span id="popup-commonNames"></span></p>
+
+            <div id="popup-images"></div>
+
+            <iframe id="popup-video" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <button id="add-to-bookmark">Bookmark</button>
+        </div>
+    </div>
+
+    <div id="image-popup" class="image-modal"> <div class="image-modal-content">
+            <span id="close-image-popup" class="close-modal">&times;</span> <img id="enlarged-image" src="" alt="Enlarged Plant Image" class="large-image"> </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
